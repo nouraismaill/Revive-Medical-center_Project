@@ -35,7 +35,7 @@ const Doctors = () => {
     });
   }, []);
 
-  const { data: doctors, loading, error } = useFetchData(`https://revive-backend-j4x9.onrender.com/doctors`);
+  const { data: doctors, loading, error } = useFetchData(`${BASE_URL}/doctors`);
 
   useEffect(() => {
     if (doctors) {
