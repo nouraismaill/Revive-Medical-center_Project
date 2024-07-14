@@ -20,7 +20,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const res = await fetch(`${BASE_URL}/auth/login`, {
+      const res = await fetch(`https://revive-backend-j4x9.onrender.com//auth/login`, {
         method: "post",
         headers: {
           "Content-Type": "application/json",
