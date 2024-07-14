@@ -46,7 +46,7 @@ const Profile = ({ user }) => {
     setLoading(true);
 
     try {
-      const res = await fetch(`https://revive-backend-j4x9.onrender.com/users/${user._id}`, {
+      const res = await fetch(`${BASE_URL}/users/${user._id}`, {
         method: "put",
         headers: {
           "Content-Type": "application/json",
