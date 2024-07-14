@@ -48,7 +48,7 @@ const Signup = () => {
     setLoading(true);
 
     try {
-      const res = await fetch(`${BASE_URL}/auth/register`, {
+      const res = await fetch(`https://revive-backend-j4x9.onrender.com/auth/register`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
