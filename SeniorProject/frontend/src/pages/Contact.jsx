@@ -13,7 +13,7 @@ const Contact = () => {
     try {
       await axios
         .post(
-          "http://localhost:5050/api/v1/message/send",
+          "https://revive-backend-j4x9.onrender.com/api/v1/message/send",
           { name, email, phone, message },
           {
             headers: { "Content-Type": "application/json" },
