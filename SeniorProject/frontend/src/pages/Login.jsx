@@ -92,7 +92,7 @@ const Login = () => {
 
           <div className="mt-7"></div>
           <p className="signup-link">
-            Don't have an account? <a href="${BASE_URL}/auth/register">Sign up</a>
+            Don't have an account? <a href="/register">Sign up</a>
           </p>
         </div>
       </form>
