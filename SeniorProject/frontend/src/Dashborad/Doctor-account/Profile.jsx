@@ -48,7 +48,7 @@ const Profile = ({ doctorData }) => {
   const updateProfileHandler = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(`${BASE_URL}/doctors/${doctorData._id}`, {
+      const res = await fetch(`https://revive-backend-j4x9.onrender.com/doctors/${doctorData._id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",
