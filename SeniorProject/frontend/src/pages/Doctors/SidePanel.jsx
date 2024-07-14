@@ -70,7 +70,7 @@ const SidePanel = ({ doctorId, ticketPrice, timeSlots }) => {
       setIsLoading(true);
       dispatch(showLoading());
       const res = await axios.post(
-        `${BASE_URL}/bookings/booking-availability/${doctorId}`,
+        `$https://revive-backend-j4x9.onrender.com/bookings/booking-availability/${doctorId}`,
         { doctorId, date, time },
         {
           headers: {
