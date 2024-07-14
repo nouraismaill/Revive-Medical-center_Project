@@ -15,7 +15,7 @@ const DoctorsDetails = () => {
     data: doctor,
     loading,
     error,
-  } = useFetchData(`https://revive-backend-j4x9.onrender.com/doctors/${id}`);
+  } = useFetchData(`${BASE_URL}/doctors/${id}`);
   const {
     name,
     qualifications,
