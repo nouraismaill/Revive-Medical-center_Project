@@ -11,7 +11,7 @@ import Tabs from "./Tabs";
 
 export default function Dashboard() {
   const { data, loading, error } = useGetProfile(
-    `${BASE_URL}/doctors/profile/me`
+    `https://revive-backend-j4x9.onrender.com/doctors/profile/me`
   );
 
   const [tab, setTab] = useState("overview");
