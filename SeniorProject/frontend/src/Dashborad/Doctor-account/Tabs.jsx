@@ -10,7 +10,7 @@ export default function Tabs({ tab, setTab }) {
   };
   const handleDeleteAccount = async () => {
     try {
-      const res = await fetch(`${BASE_URL}/users/${userData._id}`, {
+      const res = await fetch(`https://revive-backend-j4x9.onrender.com/users/${userData._id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
